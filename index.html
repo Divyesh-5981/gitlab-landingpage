@@ -19,48 +19,68 @@
   <body>
     <!-- header section starts from here -->
     <header class="header">
-      <!-- left-navbar -->
-      <nav class="left-navbar">
-        <div class="logo">
-          <img
-            width="193px"
-            height="24px"
-            src="https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=760"
-            alt=""
-          />
+      <div class="header-div">
+        <!-- left-navbar starts from here -->
+        <div class="main-nav-left">
+          <div class="logo">
+            <a href="#" class="a-logo"
+              ><img
+                width="193px"
+                class="atlassian-pic"
+                height="24px"
+                src="https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=760"
+                alt="Atlassian Logo"
+            /></a>
+          </div>
+          <div class="global-nav-links-left">
+            <div class="left-nav">
+              <a href="#" class="left-a"
+                >Products <i class="fa fa-angle-down caret-down"></i
+              ></a>
+            </div>
+            <div class="left-nav">
+              <a href="#" class="left-a"
+                >For teams <i class="fa fa-angle-down caret-down"></i
+              ></a>
+            </div>
+            <div class="left-nav">
+              <a href="#" class="left-a"
+                >Support <i class="fa fa-angle-down caret-down"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        <ul class="left-items">
-          <li class="add-icon">
-            <a href="#" class="left-link">Products
-            <i class="fa fa-angle-down caret-down"></i></a>
-          </li>
-          <li class="add-icon">
-            <a href="#" class="left-link">For Teams
-            <i class="fa fa-angle-down caret-down"></i></a>
-          </li>
-          <li class="add-icon">
-            <a href="#" class="left-link">Support
-            <i class="fa fa-angle-down caret-down"></i></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- right-navbar -->
-      <nav class="right-navbar">
-        <ul class="right-items">
-          <li><btn class="btn">Try now</btn></li>
-          <li class="buynow-li"><a href="#" class="simple-a">Buy now</a></li>
-          <li class="magnify">
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          </li>
-        </ul>
-        <div class="account-btn">
-          <a href="#" class="simple-a"
-            ><i class="fa-solid fa-user account-icon"></i
-            ><span class="bold-account">My Account</span>
-            <i class="fa fa-angle-down caret-down-account"></i
+        <!-- left-navbar ends from here -->
+
+        <!-- right-navbar starts from here -->
+        <div class="main-nav-right">
+          <div class="nav-btn">
+            <div class="try-btn">
+              <a href="#" class="try-btn-link">Try now</a>
+            </div>
+            <div class="buy-btn">
+              <a href="#" class="buy-btn-link">Buy now</a>
+            </div>
+          </div>
+
+          <a href="#" class="magnify"
+            ><i class="fa-solid fa-magnifying-glass mag-glass"></i
           ></a>
+
+          <a href="#"><i class="fa-thin fa-pipe verticle-line"></i></a>
+          <div class="avtar-div">
+            <button class="avtar-btn">
+              <a href="#" class="simple-a"
+                ><i class="fa-solid fa-user account-icon"></i
+                ><span class="bold-account">My Account</span>
+                <i class="fa fa-angle-down caret-down-account"></i
+              ></a>
+            </button>
+          </div>
         </div>
-      </nav>
+
+        <!-- right-navbar ends from here -->
+      </div>
     </header>
     <!-- header section ends here -->
 
@@ -115,7 +135,9 @@
         <ul class="single-management">
           <li><a class="mgmt-link" href="#">Work Management</a></li>
           <li><a class="mgmt-link" href="#">IT Service Management</a></li>
-          <li><a class="mgmt-link" href="#">Agile and DevOps</a></li>
+          <li class="agile-li">
+            <a class="mgmt-link agile" href="#">Agile and DevOps</a>
+          </li>
         </ul>
       </div>
 
@@ -132,7 +154,7 @@
             <div class="single-section">
               <a class="img-icon-software">
                 <img
-                  src="./images/first.jpg"
+                  src="./images/logos-jira software-icon-gradient-blue.svg"
                   alt=""
                   height="50px"
                   width="50px"
@@ -147,7 +169,7 @@
             <div class="single-section">
               <a class="img-icon-software">
                 <img
-                  src="./images/confluence.jpg"
+                  src="./images/Jira Align-icon-blue-rgb.svg"
                   height="50px"
                   width="50px"
                   class="software-img"
@@ -161,13 +183,14 @@
             <div class="single-section">
               <a class="img-icon-software">
                 <img
-                  src="./images/work.png"
+                  src="./images/compass-mark-gradient-blue.svg"
                   alt=""
                   width="50px"
                   height="50px"
                   class="software-img"
                 />
               </a>
+
               <div class="content">
                 <h4>Compass</h4>
                 <p class="software-text">Business team Collaboration</p>
